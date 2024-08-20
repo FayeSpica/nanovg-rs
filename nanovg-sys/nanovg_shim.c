@@ -6,6 +6,8 @@
 #include <GLUT/glut.h>
 #elif defined(_WIN32)
 #include <glad.h>
+#elif defined(__ANDROID__)
+#include <GLES2/gl2.h>
 #else
 #include <GL/gl.h>
 #endif

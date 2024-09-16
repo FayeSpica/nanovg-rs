@@ -20,7 +20,7 @@ fn build_library(backend_macro: &str) {
     if target.contains("android") {
         println!("cargo:rustc-link-lib=android");
         println!("cargo:rustc-link-lib=EGL");
-        println!("cargo:rustc-link-lib=GLESv2");
+        println!("cargo:rustc-link-lib=GLESv3");
     } else if target.contains("linux") {
         println!("cargo:rustc-link-lib=GL");
     } else if target.contains("darwin") {
